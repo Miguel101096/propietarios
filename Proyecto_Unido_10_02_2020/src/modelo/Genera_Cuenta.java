@@ -275,4 +275,53 @@ public class Genera_Cuenta {
         }
         return conductor;
     }
+    //esto puede no servir
+    public String genNumCuenta(String numCedula) {
+
+        String nombre;
+        String cedula;
+        String numTarjeta;
+        String numTarjetaEncontrado = null;
+        String fecha;
+
+        File archivo = null;
+        FileReader fr = null;
+        BufferedReader br = null;
+
+        try {
+            archivo = new File("Tarjetas_usuarios.txt");
+            fr = new FileReader(archivo);
+            br = new BufferedReader(fr);
+
+            // Lectura del fichero
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                StringTokenizer st = new StringTokenizer(linea, "++");
+                cedula = st.nextToken();
+                nombre = st.nextToken();
+                numTarjeta = st.nextToken();
+                fecha = st.nextToken();
+                if (numCedula.equals(cedula)) {
+                    numTarjetaEncontrado = numTarjeta;
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != fr) {
+                    fr.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        if (numTarjetaEncontrado == null) {
+            return "";
+        } else {
+            return numTarjetaEncontrado;
+        }
+    }
 }
+
