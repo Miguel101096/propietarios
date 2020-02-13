@@ -1,7 +1,7 @@
 package modelo;
 
 
-public class PagoViaje extends PAGO {
+public class PagoViaje extends Pago {
 
     private String numCuentaEmpresa = getNumCuentaEmpresa();
 
