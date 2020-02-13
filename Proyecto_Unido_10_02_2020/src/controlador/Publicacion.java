@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 import modelo.DATOS_DEL_VIAJE;
-import vistas.FORMULARIO_PAGO;
+import vistas.FormularioPago;
 
 
 
