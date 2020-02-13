@@ -1,7 +1,7 @@
 package ejecutable;
 
 import modelo.CONDUCTOR;
-import modelo.Genera_Cuenta;
+import modelo.GenerarCuenta;
 import vistas.PRINCIPAL;
 
 

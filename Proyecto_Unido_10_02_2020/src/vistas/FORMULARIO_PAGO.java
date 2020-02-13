@@ -26,7 +26,7 @@ public class FORMULARIO_PAGO extends javax.swing.JDialog {
     private String cedula;
     private int monto;
     PASAJERO pasajero;
-    Genera_Cuenta gc = new Genera_Cuenta();
+    GenerarCuenta gc = new GenerarCuenta();
     
     private boolean estadoPago=false;
 
@@ -65,7 +65,7 @@ public class FORMULARIO_PAGO extends javax.swing.JDialog {
     }
     
     public void setDatosPasajero(String nombre, String cedula, int monto) {
-        Genera_Cuenta gc = new Genera_Cuenta();
+        GenerarCuenta gc = new GenerarCuenta();
         //PASAJERO pasajero = gc.generaDatosPasajero(cedula);
         jLabelCedula.setText(cedula);
         this.nombre=nombre;
@@ -372,7 +372,7 @@ public class FORMULARIO_PAGO extends javax.swing.JDialog {
     }
     
     public void confirmarPago(String cvv){
-        PAGO_VIAJE pago = new PAGO_VIAJE();    
+        PagoViaje pago = new PagoViaje();    
         if(pago.pagar(nombre, cedula, monto,cvv)){
             JOptionPane.showMessageDialog(this, "El pago fue Correcto");
             //notifiacar aqui

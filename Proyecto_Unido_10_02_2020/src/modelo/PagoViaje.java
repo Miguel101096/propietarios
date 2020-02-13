@@ -1,13 +1,13 @@
 package modelo;
 
 
-public class PAGO_VIAJE extends PAGO {
+public class PagoViaje extends PAGO {
 
     private String numCuentaEmpresa = getNumCuentaEmpresa();
 
     public boolean pagar(String nomConductor, String cedulaPasajero, int montoString,String Cvv) {
         
-        Genera_Cuenta gc = new Genera_Cuenta();
+        GenerarCuenta gc = new GenerarCuenta();
         
         int monto = montoString;
 

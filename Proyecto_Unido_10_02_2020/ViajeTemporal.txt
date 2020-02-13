@@ -1,6 +1,6 @@
 2567++000000000-0++MIGUEL++REINA++1++TOYOTA++pcq-2323++Loja++Santo Domingo++13/02/2020++03:30++10 Horas con 56 Min.++56++1++{}
-3386++172526388-1++ALEX++VILA++3++toyota++pcq-6789++Puyo++Esmeraldas++13/02/2020++04:20++03:50++20++3++{}
+3386++172526388-1++ALEX++VILA++2++toyota++pcq-6789++Puyo++Esmeraldas++13/02/2020++04:20++03:50++20++2++{}
 1704++000000000-0++MIGUEL++REINA++1++TOYOTA++pcq-2323++Ibarra++Guayaquil++14/02/2020++05:20++ 9 Horas con 10 Min.++34++1++{}
 1455++172526388-1++ALEX++VILA++4++toyota++pcq-6789++Latacunga++Machala++14/02/2020++04:40++03:20++14++4++{}
-8635++172526388-1++ALEX++VILA++4++toyota++pcq-6789++Riobamba++Guaranda++14/02/2020++03:10++14:10++14++4++{}
+8635++172526388-1++ALEX++VILA++3++toyota++pcq-6789++Riobamba++Guaranda++14/02/2020++03:10++14:10++14++3++{}
 1163++172526388-1++ALEX++VILA++2++toyota++pcq-6789++Ipiales++Tena++21/02/2020++01:20++03:20++11++2++{}

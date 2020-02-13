@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 //clase coneccion
 
-public class Genera_Cuenta {
+public class GenerarCuenta {
 
     public ArrayList generaCuentas() {
 
@@ -55,7 +55,7 @@ public class Genera_Cuenta {
         return cuentasDebito;
     }
 
-    public void gurdaCuenta(ArrayList cuentasCredito) {
+    public void guardarCuenta(ArrayList cuentasCredito) {
         FileWriter fichero = null;
         PrintWriter pw = null;
         try {
