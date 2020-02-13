@@ -176,6 +176,7 @@ public class Genera_Cuenta {
         }
 
     }
+
     public PASAJERO generaDatosPasajero(String cedulaBuscar) {
 
         PASAJERO pasajero = null;
@@ -211,7 +212,7 @@ public class Genera_Cuenta {
                 fechanac = st.nextToken();
 
                 if (cedulaBuscar.equals(cedula)) {
-                    pasajero = new PASAJERO(nombre,apellido,  cedula, sexo,  correo,  usuario,  contraseña,  fechanac);
+                    pasajero = new PASAJERO(nombre, apellido, cedula, sexo, correo, usuario, contraseña, fechanac);
                     System.out.println(nombre + "++" + apellido + "++" + cedula + "++" + sexo + "++" + correo + "++" + usuario + "++" + contraseña + "++" + fechanac);
                     break;
                 }
@@ -228,5 +229,50 @@ public class Genera_Cuenta {
             }
         }
         return pasajero;
-    }    
+    }
+
+    public CONDUCTOR generaDatosConductor(String cedulaBuscar) {
+
+        String nombre, apellido, cedula, sexo, correo, usuario, contraseña, fechanac;
+
+        CONDUCTOR conductor = null;
+
+        File archivo = null;
+        FileReader fr = null;
+        BufferedReader br = null;
+
+        try {
+            archivo = new File("Usuario_solo_Conductores.txt");
+            fr = new FileReader(archivo);
+            br = new BufferedReader(fr);
+
+            String linea;
+            while ((linea = br.readLine()) != null) {
+                StringTokenizer st = new StringTokenizer(linea, "++");
+                cedula = st.nextToken();
+                nombre = st.nextToken();
+                apellido = st.nextToken();
+                sexo = st.nextToken();
+                correo = st.nextToken();
+                usuario = st.nextToken();
+
+                if (cedulaBuscar.equals(cedula)) {
+                    conductor = new CONDUCTOR(nombre, apellido, cedula, sexo, correo, usuario, "", "", "", null);
+                    //System.out.println(nombre + "++" + apellido + "++" + cedula + "++" + sexo + "++" + correo + "++" + usuario + "++" + contraseña + "++" + fechanac);
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (null != fr) {
+                    fr.close();
+                }
+            } catch (Exception e2) {
+                e2.printStackTrace();
+            }
+        }
+        return conductor;
+    }
 }
