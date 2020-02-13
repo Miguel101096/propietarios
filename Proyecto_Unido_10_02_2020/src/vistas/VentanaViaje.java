@@ -283,7 +283,7 @@ public final class VentanaViaje extends javax.swing.JDialog {
 
     public boolean pagarViaje() {
         System.out.println("en pago 3");
-        FormularioPago dialog = new FormularioPago(new javax.swing.JFrame(), true);
+        FORMULARIO_PAGO dialog = new FORMULARIO_PAGO(new javax.swing.JFrame(), true);
         //dialog.setDatos(jLabel10.getText(), cedu_conductor.getText(), jLabel9.getText());
 
         dialog.setDatos(pasajero, precio,"ESTEBAN ANDALUZ");
